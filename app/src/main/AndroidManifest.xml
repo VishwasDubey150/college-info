@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.collegeinfo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CollegeInfo">
+        <activity
+            android:name=".monda"
+            android:exported="true"
+            android:label="Time Table(Monday)" />
+        <activity
+            android:name=".Sat"
+            android:exported="true"
+            android:label="Time Table(Saturday)"
+            android:parentActivityName=".CurrentTimeTable" />
+        <activity
+            android:name=".Fri"
+            android:exported="true"
+            android:label="Time Table(Friday)"
+            android:parentActivityName=".CurrentTimeTable" />
+        <activity
+            android:name=".Thu"
+            android:exported="true"
+            android:label="Time Table(Thursday)"
+            android:parentActivityName=".CurrentTimeTable" />
+        <activity
+            android:name=".Wed"
+            android:exported="true"
+            android:label="Time Table(Wednesday)"
+            android:parentActivityName=".CurrentTimeTable" />
+        <activity
+            android:name=".tuesda"
+            android:exported="true"
+            android:label="Time Table(Tuesday)"
+            android:parentActivityName=".CurrentTimeTable" />
+        <activity
+            android:name=".CurrentTimeTable"
+            android:exported="true"
+            android:label="Timetable"
+            android:parentActivityName=".year" />
+        <activity
+            android:name=".Semester_I"
+            android:exported="true"
+            android:label="Semester I"
+            android:parentActivityName=".year" />
+        <activity
+            android:name=".year"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
